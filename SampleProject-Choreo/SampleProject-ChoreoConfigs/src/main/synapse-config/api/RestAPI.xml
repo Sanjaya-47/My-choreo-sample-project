@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/greetings" name="RestAPI" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET" uri-template="/me">
+        <inSequence>
+            <log description="Logger" level="custom">
+                <property name="receiveConfirmation" value="Request is received by the API."/>
+            </log>
+            <call>
+                <endpoint key="MockyEP"/>
+            </call>
+            <respond description="Respond"/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>

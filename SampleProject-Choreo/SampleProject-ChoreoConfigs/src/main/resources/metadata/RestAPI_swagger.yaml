@@ -1,0 +1,13 @@
+openapi: 3.0.1
+info:
+  title: RestAPI
+  description: API Definition of RestAPI
+  version: 1.0.0
+servers:
+- url: http://localhost:8290/greetings
+paths:
+  /me:
+    get:
+      responses:
+        default:
+          description: Default response

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.sample.choreo</groupId>
+    <artifactId>SampleProject-ChoreoConfigs</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+  </parent>
+  <groupId>com.sample.choreo</groupId>
+  <artifactId>SampleProject-ChoreoConfigs_module</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>SampleProject-ChoreoConfigs_module</name>
+  <description>SampleProject-ChoreoConfigs_module</description>
+  <modules>
+    <module>api/RestAPI</module>
+    <module>metadata/RestAPI_swagger</module>
+    <module>metadata/RestAPI_metadata</module>
+    <module>endpoints/MockyEP</module>
+  </modules>
+</project>
